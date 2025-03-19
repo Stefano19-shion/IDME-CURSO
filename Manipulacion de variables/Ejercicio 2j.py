@@ -12,10 +12,11 @@ system("cls")
 # Programa principal:
 while numero != 0:
     numero= float(input("introduce el numero a multiplicar y sumar:"))
-    numero = suma + numero
+    suma = suma + numero
     if numero != 0:
      producto  = producto * numero
 
 print(f"el numero de valores sumados es {suma}")
 print(f"la multiplicacion total es {producto}")
+
 
