@@ -3,13 +3,13 @@ def agregarCancion(coleccion):
     titulo = input("Título de la canción: ")
     artista = input("Artista: ")
     genero = input("Género: ")
-    anio = input("Año de lanzamiento: ")
+    año = input("Año de lanzamiento: ")
     
     cancion = {
         "titulo": titulo,
         "artista": artista,
         "genero": genero,
-        "anio": anio
+        "año": año
     }
     
     coleccion.append(cancion)
@@ -23,4 +23,4 @@ def mostrarColeccion(coleccion):
 
     print("\n🎼 Lista de canciones:")
     for idx, cancion in enumerate(coleccion, start=1):
-        print(f"{idx}. {cancion['titulo']} - {cancion['artista']} ({cancion['anio']}) [{cancion['genero']}]")
+        print(f"{idx}. {cancion['titulo']} - {cancion['artista']} ({cancion['año']}) [{cancion['genero']}]")

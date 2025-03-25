@@ -1,7 +1,9 @@
 from os import system  
 
 import gestion_musica
-import almacenamiento
+import almacenamiento #Importamos los módulos para poder usar sus funciones.
+
+
 
 # Cargar la colección al iniciar
 coleccion = almacenamiento.cargarDatos()
