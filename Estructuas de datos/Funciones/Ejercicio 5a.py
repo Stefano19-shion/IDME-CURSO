@@ -32,4 +32,3 @@ if intervalo(numero, limiteInferior, limiteSuperior):
     print("El valor está dentro del intervalo!!")
 else:
     print("El valor está fuera del intervalo!!")
-

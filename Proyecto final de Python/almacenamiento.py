@@ -1,18 +1,19 @@
-# almacenamiento.py
 import json
+import os
 
-ARCHIVO_JSON = "coleccion_musica.json"
+archivo_json = "coleccion_musica.json"
 
-def guardarDatos(coleccion):
-    """Guarda la colección en un archivo JSON."""
-    with open(ARCHIVO_JSON, "w") as archivo:
-        json.dump(coleccion, archivo, indent=4)
-    print("💾 Datos guardados correctamente.")
+def cargar_coleccion():
+    if not os.path.exists(archivo_json):
+        return []
+    with open(archivo_json, "r", encoding="utf-8") as f:
+        try:
+            return json.load(f)
+        except json.JSONDecodeError:
+            return []
 
-def cargarDatos():
-    """Carga la colección desde el archivo JSON, si existe."""
-    try:
-        with open(ARCHIVO_JSON, "r") as archivo:
-            return json.load(archivo)
-    except FileNotFoundError:
-        return []  # Si el archivo no existe, devuelve una lista vacía
+def guardar_cancion(cancion):
+    coleccion = cargar_coleccion()
+    coleccion.append(cancion)
+    with open(archivo_json, "w", encoding="utf-8") as f:
+        json.dump(coleccion, f, indent=4, ensure_ascii=False)

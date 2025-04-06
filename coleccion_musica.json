@@ -3,6 +3,24 @@
         "titulo": "Breaking the law",
         "artista": "Judas priest",
         "genero": "Metal",
-        "a\u00f1o": "1980"
+        "año": "1980"
+    },
+    {
+        "titulo": "Tu falta de querer",
+        "artista": "Mon Laferte",
+        "genero": "Balada",
+        "año": "2015"
+    },
+    {
+        "titulo": "Hips Don't Lie",
+        "artista": "Shakira",
+        "genero": "Pop",
+        "año": "2005"
+    },
+    {
+        "titulo": "In the end",
+        "artista": "Linkin Park",
+        "genero": "Nu metal",
+        "año": "2000"
     }
 ]
